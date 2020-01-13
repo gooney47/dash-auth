@@ -3,14 +3,15 @@ from setuptools import setup
 import io
 
 main_ns = {}
-exec(open('dash_auth/version.py').read(), main_ns)
+exec(open('dash_auth_cookie/version.py').read(), main_ns)
 
 setup(
-    name='dash_auth',
+    name='dash_auth_cookie',
     version=main_ns['__version__'],
-    author='Christopher Parmer',
-    author_email='chris@plot.ly',
-    packages=['dash_auth'],
+    author='Philipp Oldenburg',
+    author_email='philipp@oldenburgs.eu',
+    package='dash_auth_cookie',
+    packages=['dash_auth_cookie'],
     license='MIT',
     description='Dash Authorization Package.',
     long_description=io.open('README.md', encoding='utf-8').read(),
