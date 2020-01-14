@@ -36,8 +36,8 @@ auth = dash_auth_cookie.BasicAuth(
         app,
         VALID_USERNAME_PASSWORD_PAIRS,
         {'somename': 'somevalue'}
- )
- ...
+)
+...
  ```
 
 Then if a cookie with name "somename" and value "somevalue" is present login will be granted. Normal login via username and password is still possible.
