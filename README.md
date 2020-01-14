@@ -27,13 +27,17 @@ Note that Python 2.7.7 or greater is required.
 ----------------------------------------------------------------------------------------------------
 Cookie extension:
 
+```
+...
 import dash_auth_cookie
 
-# third parameter is a list of login cookies
+# third parameter is dict of login cookies
 auth = dash_auth_cookie.BasicAuth(
         app,
         VALID_USERNAME_PASSWORD_PAIRS,
         {'somename': 'somevalue'}
  )
+ ...
+ ```
 
 Then if a cookie with name "somename" and value "somevalue" is present login will be granted. Normal login via username and password is still possible.
